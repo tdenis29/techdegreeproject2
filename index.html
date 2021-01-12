@@ -4,14 +4,18 @@
         <title>Tyson's TechDegree project 2</title>
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100&display=swap');
+            </style>
     </head>
     <body>
+       
         <header>
-            <h1>Tyson Denis</h1>
-             <ul class="main-nav">
-              <li><a href="#">Home</a></li> 
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
+            <h1 class="main-name">Tyson Denis</h1>
+             <ul class="main-nav"> 
+              <li><a href="#Home" id="Home">Home</a></li> 
+              <li><a href="#Portfolio">Portfolio</a></li>
+              <li><a href="#Contact">Contact</a></li>
              </ul>
              </header>
 
@@ -21,7 +25,7 @@
          </div>   
         
          <div>
-             <h2>Portfolio</h2>
+             <h2><a id="Portfolio"></a>Portfolio</h2>
               <img src="images/portfolio-1.png\">
                <h3>Marketing Page</h3>
               <p>This shows the front page of a marketing website of a business that I'm interested in.</p>
@@ -57,20 +61,16 @@
            <p>This project allows the user to enters numbers and operations to compute math.</p>
         </div>
 
-        <footer>
-          <h2><strong>Contact</strong></h2>
+        <footer class="top-footer">
+          <h2><a id="Contact"><Contact</a></h2>
           <p>If you're interested in what I'm working on and want more information please feel free to contact me.</p>
            <adress>Phone: +1(111) 555 1234</adress><br>
            <adress>Email: blahblah@blahblah.com</adress><br>
         </footer>
 
-        <footer>
-            <h3>Tyson Denis</h3>
-            <ul>
-             <li><a href="#">Home</a></li>
-             <li><a href="#">Portfolio</a></li>
-             <li><a href="#">Contact</a></li>
-            </ul>
-        </footer>
+        <footer class="bottom-footer">
+            <h3 class="bottom-name">Tyson Denis</h3>
+             <h3 class="back-to-top">Back to Top</h3>
+       </footer>
     </body>
 </html>

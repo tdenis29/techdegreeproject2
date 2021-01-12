@@ -1,0 +1,36 @@
+/* Main Styles */
+body {
+background-color:antiquewhite;    
+}
+
+.main-name {
+background-color: cyan;
+text-align: center;
+display: block;
+margin: 0 auto;
+border: 1px solid black;
+}
+ul {
+list-style-type: none;
+padding: 0px;
+border: 1px solid grey;
+
+}
+
+li {
+padding: .5em;
+border-bottom: 1px solid grey;
+
+} 
+
+ul li:last-child {
+border-bottom: none;
+}
+
+.main-nav, li {
+    text-transform: capitalize;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px 0;
+    
+}
