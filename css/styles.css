@@ -20,7 +20,7 @@ background-color: white;
 text-align: center;
 display: block;
 margin: 0 auto;
-padding: 2rem 2rem;
+padding: 1rem 1rem;
 }
 
 ul {
@@ -52,14 +52,14 @@ margin: .5rem 0 .5rem 0;
 
 h2 {
 font-weight: bold;
-padding: 2rem 0 2rem 0;
+padding: 1.5rem 0 1.5rem 0;
 text-transform: uppercase;
 text-align: center;
 }
 
 h3 {
 font-weight: bold;
-padding: 2rem 0 2rem 0;
+padding: 1.5rem 0 1.5rem 0;
 }
 
 h4 {
@@ -78,10 +78,12 @@ a:link, a:visited {
     color: black;
     font-weight: bold;
    }
-  
+  .porto {
+      margin-top: 1rem;
+  }
  /* Boxes */
 
-.banner {;
+.banner {
 display: block;
 margin: 0 auto;
 text-align: center;
@@ -103,7 +105,7 @@ img {
     
 }
 div, col {
-    padding: 2rem 0 2rem 0;
+    padding: .5rem 0 .5rem 0;
 }
 
 .container {
@@ -117,7 +119,7 @@ div, col {
     width: 95%;
     text-align: center;
     margin: 0 auto;
-    padding: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
     border-bottom: 1px solid grey;
 }
 
