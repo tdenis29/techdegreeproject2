@@ -1,92 +1,134 @@
 /* Main Styles */
-
-
-body {
-background-color:antiquewhite;    
+* {
+box-sizing: border-box;
 }
 
+body {
+background-color: ghostwhite;
+height: 100%; 
+margin: 0 auto; 
+font-size: 1rem; 
+width: 95%; 
+}
+.heeadshot {
+width: 60%;
+margin: 0 auto;
+padding: 1rem 1rem 1rem 1rem;
+}
 .main-name {
-background-color: cyan;
+background-color: white;
 text-align: center;
 display: block;
 margin: 0 auto;
-border: 1px solid black;
-padding: 32px 32px;
+padding: 2rem 2rem;
 }
 
 ul {
 list-style-type: none;
-padding: 0px;
+background-color: whitesmoke;
 text-transform: uppercase;
-border: 1px solid grey;
+display: table;
+width: 100%;
 
 }
 
 li {
 padding: .5em;
-border-bottom: 1px solid grey;
-
+margin: .5rem 0 .5rem 0;
 } 
 
-ul li:last-child {
-border-bottom: none;
+ul li {
+margin: .5rem 0 .5rem 0;
 }
 
-.main-nav, li {
-    background-color: whitesmoke;
-    padding: 10px 0;
+.main-name, .main-nav, li {
+    background-color: white;
+    padding: 1rem 0;
     text-align: center;
-    }
+    margin: 0;
+    display: block;
+}
 
 
+h2 {
+font-weight: bold;
+padding: 2rem 0 2rem 0;
+text-transform: uppercase;
+}
 
+h3 {
+font-weight: bold;
+padding: 2rem 0 2rem 0;
+}
+
+h4 {
+    display: inline-block;
+}
+
+p {
+font-size: 1.25rem;
+}
 /* Link Boxes */
 
 a:link, a:visited {
     padding: 10px 5px;
     text-decoration: none;
     display: inline-block;
+    color: black;
+    font-weight: bold;
    }
   
- 
-.banner {
-border: 1px solid black;
+ /* Boxes */
+
+.banner {;
 display: block;
 margin: 0 auto;
 text-align: center;
+width: 100%;
+background-color: whitesmoke;
+}
+
+
+.col {
+ 
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+img {
+    max-width: 92.5%;
+    margin: 0 auto:
+    
+}
+div, col {
+    padding: 2rem 0 2rem 0;
 }
 
 .container {
    width: 100%;
     margin: 0 auto;
-    text-align: center;
-}
-
-footer {
-text-align: center;
-}
-
+    height: auto;
+    
 }
 
 .top-footer {
-    width: 85%;
+    width: 95%;
     text-align: center;
     margin: 0 auto;
+    padding: 2rem 0 2rem 0;
+    border-bottom: 1px solid grey;
 }
 
-.bottom-name {
-    float: left;
-}
-.back-t {
-    float: right;
-    
+
    
-}
+
 .bottom-name, .back-t {
     display: inline;
 }
 .bottom-footer {
-    border-top: 2px solid lightgray;
+   
+
 }
 
 /* Media Queries */
@@ -129,3 +171,4 @@ text-align: center;
     content: " ";
     display: table;
     clear: both;
+{
