@@ -1,6 +1,15 @@
-/* Main Styles */
+@font-face {
+    font-family: "Nanum";
+    src: url('../fonts/NanumGothic-Regular.ttf');
+    font-style: normal;
+    font-weight: 100;
+}
+
 * {
 box-sizing: border-box;
+padding: 0;
+margin: 0;
+list-style-type:none;
 }
 
 body {
@@ -8,26 +17,26 @@ background-color: whitesmoke;
 height: 100%; 
 margin: 0 auto; 
 font-size: 1rem; 
-width: 95%; 
+width: 100%; 
+font-family: 'Nanum'
+
 }
 
-.heeadshot {
-width: 60%;
-margin: 0 auto;
-padding: 1rem 1rem 1rem 1rem;
-}
+
 
 .main-name {
 background-color: white;
 text-align: center;
 display: block;
 margin: 0 auto;
-padding: 1rem 1rem;
+padding: 1rem ;
 background-color: whitesmoke;
 }
 
 header {
     background-color:whitesmoke;
+    text-align: center;
+    width:100%;
 }
 
 address {
@@ -41,8 +50,6 @@ address {
 }
 /* Navigation */
 ul {
-list-style-type: none;
-
 text-transform: uppercase;
 width: 100%;
 margin-top: 0;
@@ -60,7 +67,7 @@ text-align: center;
   }
 
   .main-name, .main-nav, ul, li, a {
-    display:block;
+    display: inline-block;
     text-decoration:none;
 }
 
@@ -86,6 +93,7 @@ width: 100%;
 h3 {
 font-weight: bold;
 padding: 1rem 0 1rem 0;
+margin:0 auto;
 }
 
 h4 {
@@ -93,7 +101,11 @@ h4 {
 }
 
 p {
-font-size: 1.25rem;
+font-size: 1.2rem;
+padding: 1rem;
+font-family: "Nanum";
+font-weight: 100;
+font-style:normal;
 }
 
   .porto {
@@ -101,7 +113,7 @@ font-size: 1.25rem;
       background-color: white;
       margin: 0 auto;
   }
- /* Boxes */
+ 
 
 .banner {
 display: block;
@@ -113,39 +125,53 @@ margin-bottom: 2rem;
 padding: 0;
 
 }
+.skills {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid grey;
+}
+
 
 
 .col {
  
+display: block;
+margin: 0 auto;
+text-align: center;
+width: 100%;
+    
+}
+img {
+    max-width: 92.5%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    }
+/*  */
+/* div, col {
+  
     display: block;
     margin: 0 auto;
     text-align: center;
     width: 100%;
     padding-left: 1rem;
-    padding-right: 1rem;
-}
-img {
-    max-width: 92.5%;
-    margin: 0 auto;
-    }
+    padding-right: 1rem; */
 
-div, col {
-    padding: .5rem 0 .5rem 0;
-    
-}
+/*  */
 
-
-/* .col + .col {
+ /* .col .col { 
     padding-left: 1em;
   }
   
   .col:last-child {
     padding-right: 0;
-  } */
+  } */ */
 
 .container {
    width: 100%;
-    margin: 0;
+    margin: 0 auto;
     height: auto;
     background-color: white;
     padding: 0;
@@ -160,8 +186,7 @@ div, col {
     border-bottom: 1px solid grey;
 }
 .bottom-footer {
-    width:100%;
- 
+    width: 100%;
     margin: 0 auto;
 } 
 
@@ -174,14 +199,14 @@ div, col {
 }
 .back-t {
     float: right;
-    padding: 1rem;
+    left:0;
     font-size: 1.2rem;
 }
 
 
 /* Media Queries */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     
     .main-nav li {
     display: inline-block;
@@ -189,13 +214,19 @@ div, col {
     background-color: whitesmoke;
       
        }
-   .banner, img {
+   .banner, .headshot {
        float: right;
+    
 
 
    }
+   .banner, img, p {
+       clear:left;
+   }
+   
+
   .col {
-      width: 45%;
+      width: 50%;
       float: left;
      
   }
@@ -208,11 +239,13 @@ div, col {
   }
    
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
 
 .main-name {
     float:left;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
    
 }
 
@@ -227,11 +260,14 @@ div, col {
 }
 
 .container {
-    width: 99%;
-    max-width: 1150px;
+    width: 100%;
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
 }
 .col {
     width: 31%;
+    margin: 0 auto;
 }
 }
 .clearfix::after {
