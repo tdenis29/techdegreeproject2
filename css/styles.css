@@ -75,7 +75,7 @@ text-align: center;
   }
 
   .main-name, .main-nav, ul, li, a {
-    display: inline-block;
+    
     text-decoration:none;
 }
 
