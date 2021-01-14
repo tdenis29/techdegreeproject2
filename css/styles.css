@@ -4,7 +4,7 @@ box-sizing: border-box;
 }
 
 body {
-background-color: ghostwhite;
+background-color: whitesmoke;
 height: 100%; 
 margin: 0 auto; 
 font-size: 1rem; 
@@ -21,33 +21,52 @@ text-align: center;
 display: block;
 margin: 0 auto;
 padding: 1rem 1rem;
+background-color: whitesmoke;
 }
 
+header {
+    background-color:whitesmoke;
+}
+address {
+    font-style: normal;
+}
+.main {
+
+    margin:0 auto;
+}
+/* Navigation */
 ul {
 list-style-type: none;
-background-color: whitesmoke;
+
 text-transform: uppercase;
-display: table;
 width: 100%;
-
+margin-top: 0;
+margin-bottom: 0;
 }
-
-li {
-padding: .5em;
-margin: .5rem 0 .5rem 0;
-} 
 
 ul li {
 margin: .5rem 0 .5rem 0;
+background-color: white;
 }
 
 .main-name, .main-nav, li {
-    background-color: white;
-    padding: 1rem 0;
-    text-align: center;
-    margin: 0;
-    display: block;
+padding: 1rem 0;
+text-align: center;
+  }
+
+  .main-name, .main-nav, ul, li, a {
+    display:block;
+    text-decoration:none;
 }
+
+a:link, a:visited {
+   
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+   }
+
 
 
 h2 {
@@ -55,11 +74,13 @@ font-weight: bold;
 padding: 1.5rem 0 1.5rem 0;
 text-transform: uppercase;
 text-align: center;
+clear: both;
+width: 100%;
 }
 
 h3 {
 font-weight: bold;
-padding: 1.5rem 0 1.5rem 0;
+padding: 1rem 0 1rem 0;
 }
 
 h4 {
@@ -69,17 +90,11 @@ h4 {
 p {
 font-size: 1.25rem;
 }
-/* Link Boxes */
 
-a:link, a:visited {
-    padding: 10px 5px;
-    text-decoration: none;
-    display: inline-block;
-    color: black;
-    font-weight: bold;
-   }
   .porto {
       margin-top: 1rem;
+      background-color: white;
+      margin: 0 auto;
   }
  /* Boxes */
 
@@ -89,6 +104,9 @@ margin: 0 auto;
 text-align: center;
 width: 100%;
 background-color: whitesmoke;
+margin-bottom: 2rem;
+padding: 0;
+
 }
 
 
@@ -98,20 +116,34 @@ background-color: whitesmoke;
     margin: 0 auto;
     text-align: center;
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 img {
     max-width: 92.5%;
-    margin: 0 auto:
-    
-}
+    margin: 0 auto;
+    }
+
 div, col {
     padding: .5rem 0 .5rem 0;
+    
 }
+
+
+.col + .col {
+    padding-left: 1em;
+  }
+  
+  .col:last-child {
+    padding-right: 0;
+  }
 
 .container {
    width: 100%;
-    margin: 0 auto;
+    margin: 0;
     height: auto;
+    background-color: white;
+    padding: 0;
     
 }
 
@@ -137,11 +169,13 @@ div, col {
 /* Media Queries */
 
 @media (min-width: 769px) {
-   
+    
     .main-nav li {
-       display: inline-block;
-       border: none;
-   }
+    display: inline-block;
+    width: 31%;
+    background-color: whitesmoke;
+      
+       }
    .banner, img {
        float: right;
 
@@ -150,6 +184,7 @@ div, col {
   .col {
       width: 45%;
       float: left;
+     
   }
 
    .clearfix::after {
@@ -161,10 +196,26 @@ div, col {
    
 }
 @media (min-width: 1025px) {
+
+
+.main-name {
+    float:left;
+   
+}
+
+.main-nav {
+    float: right;
+    width: 30%;
+   
+  
+}
+.main-nav li {
+    background-color: whitesmoke;
+}
+
 .container {
     width: 99%;
     max-width: 1150px;
-
 }
 .col {
     width: 31%;
@@ -174,4 +225,4 @@ div, col {
     content: " ";
     display: table;
     clear: both;
-{
+}
