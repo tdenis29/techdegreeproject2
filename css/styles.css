@@ -4,6 +4,12 @@
     font-style: normal;
     font-weight: 100;
 }
+@font-face {
+    font-family: "Almendra";
+    src: url('../fonts/AlmendraSC-Regular.ttf');
+    font-style: normal;
+    font-weight: 100;
+}
 
 * {
 box-sizing: border-box;
@@ -18,7 +24,7 @@ height: 100%;
 margin: 0 auto; 
 font-size: 1rem; 
 width: 100%; 
-font-family: 'Nanum'
+
 
 }
 
@@ -31,6 +37,8 @@ display: block;
 margin: 0 auto;
 padding: 1rem ;
 background-color: whitesmoke;
+font-family: Almendra;
+
 }
 
 header {
@@ -133,7 +141,6 @@ padding: 0;
 
 
 .col {
- 
 display: block;
 margin: 0 auto;
 text-align: center;
@@ -146,25 +153,7 @@ img {
     display: block;
     text-align: center;
     }
-/*  */
-/* div, col {
-  
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem; */
 
-/*  */
-
- /* .col .col { 
-    padding-left: 1em;
-  }
-  
-  .col:last-child {
-    padding-right: 0;
-  } */ */
 
 .container {
    width: 100%;
@@ -264,7 +253,7 @@ img {
     margin: 0 auto;
 }
 .col {
-    width: 31%;
+    width: 33%;
     margin: 0 auto;
 }
 }
