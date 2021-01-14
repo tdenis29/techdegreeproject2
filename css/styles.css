@@ -96,9 +96,6 @@ padding: 1rem 0 1rem 0;
 margin:0 auto;
 }
 
-h4 {
-    display: inline-block;
-}
 
 p {
 font-size: 1.2rem;
@@ -186,7 +183,7 @@ img {
     border-bottom: 1px solid grey;
 }
 .bottom-footer {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
 } 
 
@@ -201,6 +198,7 @@ img {
     float: right;
     left:0;
     font-size: 1.2rem;
+    padding: 1rem 0 4rem 0;
 }
 
 
