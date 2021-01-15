@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 100;
 }
-/* You said these weren't working?  */
+
 @font-face {
     font-family: "Almendra",sans-serif;
     src: url('../fonts/AlmendraSC-Regular.ttf');
