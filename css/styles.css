@@ -1,12 +1,12 @@
  @font-face {
-    font-family: "Nanum",sans-serif;
+    font-family: "Nanum";
     src: url('../fonts/NanumGothic-Regular.ttf');
     font-style: normal;
     font-weight: 100;
 }
 
 @font-face {
-    font-family: "Almendra",sans-serif;
+    font-family: "Almendra";
     src: url('../fonts/AlmendraSC-Regular.ttf');
     font-style: normal;
     font-weight: 100;
@@ -33,7 +33,7 @@ display: block;
 margin: 0 auto;
 padding: 1rem ;
 background-color: whitesmoke;
-font-family: Almendra;
+font-family: 'Almendra';
 color: blue;
 
 }
@@ -55,8 +55,7 @@ margin:0 auto;
 /* Navigation */
 ul {
 text-transform: uppercase;
-width: 100%;
-margin: 0 auto;
+
 
 list-style-type: none;
 
