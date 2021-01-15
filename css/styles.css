@@ -10,7 +10,7 @@
     src: url('../fonts/AlmendraSC-Regular.ttf');
     font-style: normal;
     font-weight: 100;
-} */
+}
 
 * {
 box-sizing: border-box;
@@ -192,11 +192,12 @@ img {
     float: right;
     left:0;
     font-size: 1.2rem;
+    padding-top: 1rem;
     
 }
 
 .bottom-nav {
-    visibility: none;
+   
     display: none;
 }
 
@@ -257,7 +258,7 @@ img {
    .bottom-nav {
        float: right;
        display:inline;
-       
+       padding-top: 1rem;
        margin: 0 auto;
    }
 }
@@ -277,9 +278,7 @@ img {
 
   
 }
-.back-t {
-    visibility: none;
-}
+
 .main-nav li {
     background-color: whitesmoke;
 }
